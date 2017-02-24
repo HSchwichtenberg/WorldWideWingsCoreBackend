@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{944402C0-A844-4C5C-9B24-F41025B97BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CB6E146-83AA-48F8-8421-B6D232CD1FCD}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Installationsanleitung.txt = Installationsanleitung.txt
+		livecoding fragmente.txt = livecoding fragmente.txt
+		WWWings_EndToEnd.postman_collection.json = WWWings_EndToEnd.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GO", "src\GO\GO.xproj", "{78B9AFD5-180C-40A0-831A-4E207402B520}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GL", "src\GL\GL.xproj", "{690E75A9-2A76-475C-9E9D-AF7F94D9823A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DZ", "src\DZ\DZ.xproj", "{4D287588-6BEC-4398-8771-2601108AEB48}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ITV.AppUtil.NETCore", "..\Demos\Web\Miraclelist\src\ITV.AppUtil.NETCore\ITV.AppUtil.NETCore.xproj", "{C12B14DF-45B0-4870-AC1A-8E49CE7560C3}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebAPI", "src\WebAPI\WebAPI.xproj", "{7C77D7D8-3BF9-46EA-8049-9889E069B680}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Tools", "src\Tools\Tools.xproj", "{0BC3E1D1-9630-4A8A-B53A-AF37589B849B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B9AFD5-180C-40A0-831A-4E207402B520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B9AFD5-180C-40A0-831A-4E207402B520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B9AFD5-180C-40A0-831A-4E207402B520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B9AFD5-180C-40A0-831A-4E207402B520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690E75A9-2A76-475C-9E9D-AF7F94D9823A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690E75A9-2A76-475C-9E9D-AF7F94D9823A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690E75A9-2A76-475C-9E9D-AF7F94D9823A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690E75A9-2A76-475C-9E9D-AF7F94D9823A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D287588-6BEC-4398-8771-2601108AEB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D287588-6BEC-4398-8771-2601108AEB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D287588-6BEC-4398-8771-2601108AEB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D287588-6BEC-4398-8771-2601108AEB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12B14DF-45B0-4870-AC1A-8E49CE7560C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12B14DF-45B0-4870-AC1A-8E49CE7560C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12B14DF-45B0-4870-AC1A-8E49CE7560C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12B14DF-45B0-4870-AC1A-8E49CE7560C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C77D7D8-3BF9-46EA-8049-9889E069B680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C77D7D8-3BF9-46EA-8049-9889E069B680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C77D7D8-3BF9-46EA-8049-9889E069B680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C77D7D8-3BF9-46EA-8049-9889E069B680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC3E1D1-9630-4A8A-B53A-AF37589B849B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC3E1D1-9630-4A8A-B53A-AF37589B849B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC3E1D1-9630-4A8A-B53A-AF37589B849B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC3E1D1-9630-4A8A-B53A-AF37589B849B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78B9AFD5-180C-40A0-831A-4E207402B520} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+		{690E75A9-2A76-475C-9E9D-AF7F94D9823A} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+		{4D287588-6BEC-4398-8771-2601108AEB48} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+		{C12B14DF-45B0-4870-AC1A-8E49CE7560C3} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+		{7C77D7D8-3BF9-46EA-8049-9889E069B680} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+		{0BC3E1D1-9630-4A8A-B53A-AF37589B849B} = {944402C0-A844-4C5C-9B24-F41025B97BE4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://it-visions.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\GO\\GO.xproj
+		SccProjectTopLevelParentUniqueName1 = WWWings_EndToEnd_Core.sln
+		SccProjectName1 = src/GO
+		SccLocalPath1 = src\\GO
+		SccProjectUniqueName2 = src\\GL\\GL.xproj
+		SccProjectTopLevelParentUniqueName2 = WWWings_EndToEnd_Core.sln
+		SccProjectName2 = src/GL
+		SccLocalPath2 = src\\GL
+		SccProjectUniqueName3 = src\\DZ\\DZ.xproj
+		SccProjectTopLevelParentUniqueName3 = WWWings_EndToEnd_Core.sln
+		SccProjectName3 = src/DZ
+		SccLocalPath3 = src\\DZ
+		SccProjectUniqueName4 = ..\\Demos\\Web\\Miraclelist\\src\\ITV.AppUtil.NETCore\\ITV.AppUtil.NETCore.xproj
+		SccProjectTopLevelParentUniqueName4 = WWWings_EndToEnd_Core.sln
+		SccProjectName4 = ../../ITV\u0020Demos/MAIN/Web/Miraclelist/src/ITV.AppUtil.NETCore
+		SccLocalPath4 = ..\\Demos\\Web\\Miraclelist\\src\\ITV.AppUtil.NETCore
+		SccProjectUniqueName5 = src\\WebAPI\\WebAPI.xproj
+		SccProjectTopLevelParentUniqueName5 = WWWings_EndToEnd_Core.sln
+		SccProjectName5 = src/WebAPI
+		SccLocalPath5 = src\\WebAPI
+		SccProjectUniqueName6 = src\\Tools\\Tools.xproj
+		SccProjectTopLevelParentUniqueName6 = WWWings_EndToEnd_Core.sln
+		SccProjectName6 = src/Tools
+		SccLocalPath6 = src\\Tools
+	EndGlobalSection
+EndGlobal

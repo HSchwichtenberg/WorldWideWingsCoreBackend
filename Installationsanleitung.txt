@@ -1,0 +1,25 @@
+"World Wide Wings" End-To-End-Beispiel
+Musterprojekt für Einsatz von .NET Core, Entity Framework Core, ASP.NET Core WebAPI, SPA mit TypeScript/JavaScript und Angular
+=============================================================================
+Autoren: Dr. Holger Schwichtenberg, Manfred Steyer
+www.IT-Visions.de
+=============================================================================
+
+Voraussetzungen:
+-----------------------------------------------------------------------
+1. Microsoft Visual Studio 2013 Update 3
+2. .NET Core Tools 1.0.1 Preview2
+3. .NET SDK 1.1.0
+4. Microsoft SQL Server 2012 Express oder höher
+
+Schritte zur Installation:
+-----------------------------------------------------------------------
+1. Connection String anpassen in "\WWWings_EndToEnd_Core\src\DZ\WWWingsModell_EFC.cs" oder in Umgebungsvariable "WWWings_CS" ablegen
+2. In der Package Manager Console "DZ" auswählen, Startprojekt auf "Tools" festlegen und dann Datenbank generieren mit "Update-Database" 
+3. In Datengenerator.run() in "Tools" einmalig (!) ausführen
+4. Dann "WebAPI" starten
+
+Fehler / Aktualisierungen des Beispiels
+-----------------------------------------------------------------------
+Bitte verstehen Sie dies als ein Beispiel, nicht eine perfekte Anwendung.
+Wenn Sie Fehler im Beispiel finden, melden Sie diese gerne unter www.IT-Visions.de/Foren.

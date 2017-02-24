@@ -1,0 +1,222 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WWWings_EndToEnd",
+		"_postman_id": "b21b77ed-f45a-df54-86f0-31d65eabc857",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8887/api/Flug/110",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"plaetze\"] = jsonData.plaetze == 250"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/Flug/110",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 101, passagierID: 120 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/Flug/Rom/Berlin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"ort\"] = jsonData[0].abflugort == \"Rom\"",
+							"tests[\"plätze\"] = jsonData[0].plaetze == 250"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/Flug/Rom/Paris",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 101, passagierID: 120 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/passagier/110",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Your test name\"] = jsonData.name == \"Hoffmann\""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/passagier/110",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 101, passagierID: 120 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/Flughafen",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Your test name\"] = jsonData[0] === \"Berlin\";"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/Flughafen",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 101, passagierID: 120 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/passagier/name/M%C3%BCller",
+			"request": {
+				"url": "http://localhost:8887/api/passagier/name/M%C3%BCller",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 101, passagierID: 120 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/Buchung",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/Buchung",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"flugNr\": 102, passagierID: 121 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8887/api/passagier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8887/api/passagier",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"kundeSeit\": \"2017-02-23T23:22:30.017Z\",\r\n    \"passagierStatus\": \"string\",\r\n    \"ID\": 0,\r\n    \"name\": \"string\",\r\n    \"vorname\": \"string\",\r\n    \"geburtsdatum\": \"2017-02-23T23:22:30.018Z\",\r\n    \"strasse\": \"string\",\r\n    \"eMail\": \"string\",\r\n    \"stadt\": \"string\",\r\n    \"land\": \"string\",\r\n    \"memo\": \"string\",\r\n    \"ganzerName\": \"string\"\r\n  }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

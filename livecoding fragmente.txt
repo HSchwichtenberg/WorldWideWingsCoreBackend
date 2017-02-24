@@ -1,0 +1,30 @@
+BO:
+Install-Package System.ComponentModel.Annotations
+
+DAL und BL:
+Install-Package Microsoft.EntityFrameworkCore.sqlserver
+
+Tools:
+-----------------------
+muss Console app sein, nicht library
+"Microsoft.NETCore.App": {
+    "type": "platform",
+    "version": "1.1.0"
+    "netcoreapp1.1": {
+
+Install-Package Microsoft.EntityFrameworkCore.tools -pre
+
+Add-migration v1
+Update-database
+
+WebAPI
+-----------------------
+Alle auf Version 1.1.x
+
+Install-Package Microsoft.AspNet.Cors
+install-Package NSwag.AspNetCore
+
+  "NSwag.AspNetCore": "8.5.0",
+  "System.Reflection": "4.3.0",
+  "System.Runtime": "4.3.0",
+  "NSwag.Annotations": "8.8.6231.36138"
